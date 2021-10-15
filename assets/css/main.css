@@ -11126,12 +11126,15 @@ textarea.form-control-lg {
 }
 .home {
   height: 100%;
-  padding-top: 15vh;
+  padding-top: 40vh;
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/Alejandro.jpg") right top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/Alejandro-3.png") right top;
   background-size: cover;
+}
+.home .nodesigner {
+  text-decoration: line-through;
 }
 .home__name {
   font-size: 4rem;
@@ -11202,7 +11205,7 @@ textarea.form-control-lg {
 
 .nav {
   position: fixed;
-  top: 40px;
+  top: 0px;
   left: 0;
   width: 100vw;
   opacity: 0.98;
@@ -11216,6 +11219,7 @@ textarea.form-control-lg {
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
   background: #272727;
@@ -11247,22 +11251,6 @@ textarea.form-control-lg {
 }
 .nav .menu-nav__link:hover {
   color: #fff;
-}
-
-.menu-nav__item:nth-child(1) {
-  transition-delay: 0.25s;
-}
-
-.menu-nav__item:nth-child(2) {
-  transition-delay: 0.35s;
-}
-
-.menu-nav__item:nth-child(3) {
-  transition-delay: 0.45s;
-}
-
-.menu-nav__item:nth-child(4) {
-  transition-delay: 0.55s;
 }
 
 body {
