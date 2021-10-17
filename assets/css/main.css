@@ -11229,7 +11229,7 @@ textarea.form-control-lg {
   transform: translateY(-100%);
 }
 .nav .menu-nav__item {
-  transform: translate(206vw, -100vh);
+  transform: translate(267vw, -100vh);
 }
 .nav .menu-nav__item.active > a {
   color: #fff;
@@ -11281,6 +11281,12 @@ textarea.form-control-lg {
   grid-template-columns: 1fr;
   gap: 2rem;
 }
+.about .contenedor .jobs .title {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0 0 -1.5rem 0;
+}
 .about .contenedor .jobs__job {
   background: #414141;
   padding: 0.5rem;
@@ -11292,7 +11298,7 @@ textarea.form-control-lg {
 .about .contenedor .jobs__job h6 {
   margin: 0.3rem 0;
 }
-.about .contenedor .skills h2 {
+.about .contenedor .skills .title {
   text-align: center;
   text-transform: capitalize;
   margin: 2rem auto 0 auto;
