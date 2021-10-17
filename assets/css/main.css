@@ -11163,6 +11163,7 @@ textarea.form-control-lg {
   height: 20px;
   width: 28px;
   transition: all 0.6s ease-in-out;
+  transition-delay: 0;
 }
 .menu-btn__burger {
   position: absolute;
@@ -11172,6 +11173,7 @@ textarea.form-control-lg {
   height: 3px;
   background: #fff;
   transition: all 0.6s ease-in-out;
+  transition-delay: 0;
 }
 .menu-btn__burger::before {
   content: "";
@@ -11181,6 +11183,7 @@ textarea.form-control-lg {
   height: 3px;
   background: #fff;
   transition: all 0.6s ease-in-out;
+  transition-delay: 0;
 }
 .menu-btn__burger::after {
   content: "";
@@ -11190,6 +11193,7 @@ textarea.form-control-lg {
   height: 3px;
   background: #fff;
   transition: all 0.6s ease-in-out;
+  transition-delay: 0;
 }
 .menu-btn__burger.open {
   transform: rotate(720deg);
@@ -11211,9 +11215,6 @@ textarea.form-control-lg {
   opacity: 0.98;
   visibility: hidden;
 }
-.nav.open {
-  visibility: visible;
-}
 .nav .menu-nav {
   display: flex;
   flex-flow: column wrap;
@@ -11226,17 +11227,9 @@ textarea.form-control-lg {
   list-style-type: none;
   padding: 1rem;
   transform: translateY(-100%);
-  transition: all 0.6s ease-in-out;
-}
-.nav .menu-nav.open {
-  transform: translateY(0);
 }
 .nav .menu-nav__item {
-  transform: translateX(100vw);
-  transition: all 0.6s ease-in-out;
-}
-.nav .menu-nav__item.open {
-  transform: translateX(0);
+  transform: translate(206vw, -100vh);
 }
 .nav .menu-nav__item.active > a {
   color: #fff;
@@ -11248,9 +11241,111 @@ textarea.form-control-lg {
   padding: 2rem 0;
   font-weight: 300;
   transition: all 0.6s ease-in-out;
+  transition-delay: 0;
 }
 .nav .menu-nav__link:hover {
   color: #fff;
+}
+
+.about {
+  padding: 2rem;
+}
+.about__bio-image {
+  margin-top: 40px;
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.1)), url("../img/Alejandro-3.png") right top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.about__bio-image p {
+  margin-bottom: 2rem;
+}
+.about__bio {
+  width: 80%;
+  text-align: center;
+}
+.about .contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-left: 1.1rem;
+}
+.about .contenedor .jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.about .contenedor .jobs__job {
+  background: #414141;
+  padding: 0.5rem;
+  border-bottom: 5px solid #ff652f;
+}
+.about .contenedor .jobs__job h2, .about .contenedor .jobs__job h3 {
+  margin: 0.5rem 0;
+}
+.about .contenedor .jobs__job h6 {
+  margin: 0.3rem 0;
+}
+.about .contenedor .skills h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 2rem auto 0 auto;
+}
+.about .contenedor .skills__group {
+  background-color: #414141;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.9rem;
+  margin: 0.5rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 0.82em;
+  transition: all 0.6s ease-in-out;
+  transition-delay: 0;
+}
+.about .contenedor .skills__group:after {
+  content: "+";
+  color: #ff652f;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.about .contenedor .skills__group.active:after {
+  content: "➖";
+}
+.about .contenedor .skills .active, .about .contenedor .skills__group:hover {
+  background-color: #8d8d8d;
+}
+.about .contenedor .skills .panel {
+  margin: -0.5rem 0 0 0.5rem;
+  padding: 0 1rem;
+  display: none;
+  background-color: #414141;
+  overflow: hidden;
+}
+.about .contenedor .skills .panel ul {
+  margin-left: -0.5rem;
+}
+.about .contenedor .skills .panel ul li {
+  font-size: 0.82em;
+  padding: 0.3rem;
+  margin-left: 0;
+  color: #fff;
+}
+.about .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.about footer {
+  transform: rotate(-90deg) translate(1rem, 2rem);
 }
 
 body {
@@ -11268,6 +11363,10 @@ h1, h2, h3 {
 a {
   color: #ff652f;
   text-decoration: none;
+}
+
+.text-secondary {
+  color: #ff652f;
 }
 
 header {
@@ -11289,6 +11388,7 @@ main .social-icons {
 main .social-icons a {
   padding: 0.4 rem;
   transition: all 0.6s ease-in-out;
+  transition-delay: 0;
 }
 main .social-icons a:hover {
   color: #fff;
