@@ -11229,7 +11229,7 @@ textarea.form-control-lg {
   transform: translateY(-100%);
 }
 .nav .menu-nav__item {
-  transform: translate(267vw, -100vh);
+  transform: translate(219vw, -100vh);
 }
 .nav .menu-nav__item.active > a {
   color: #fff;
@@ -11352,6 +11352,40 @@ textarea.form-control-lg {
 }
 .about footer {
   transform: rotate(-90deg) translate(1rem, 2rem);
+}
+
+.projects {
+  padding: 2rem;
+}
+.projects__bio-image {
+  height: 30vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.1)), url("../img/Alejandro-3.png") right top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.projects__bio-image .text-secondary {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.projects__items {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.projects__item {
+  position: relative;
+  border-bottom: 5px solid #ff652f;
+  overflow: hidden;
+  cursor: pointer;
+}
+.projects__item img {
+  width: 100%;
 }
 
 body {
