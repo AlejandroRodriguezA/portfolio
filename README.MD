@@ -1,3 +1,5 @@
+Aun esta en proceso de desarrollo, pero queria tener algo que mostrar.
+
 Referencias:
 
 Este portfolio esta inspirado en:
