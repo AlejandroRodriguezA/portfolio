@@ -1,4 +1,8 @@
-Aun esta en proceso de desarrollo, pero queria tener algo que mostrar.
+Aun esta en proceso de desarrollo, pero queria tener algo que mostrar:
+
+- https://alejandrorodrigueza.github.io/portfolio/
+- http://www.aj-ra.com/
+
 
 Referencias:
 
