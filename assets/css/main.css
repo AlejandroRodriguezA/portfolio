@@ -11337,7 +11337,7 @@ textarea.form-control-lg {
   transform: translateY(-100%);
 }
 .nav .menu-nav__item {
-  transform: translate(128vw, -100vh);
+  transform: translate(147vw, -100vh);
 }
 .nav .menu-nav__item.active > a {
   color: #fff;
@@ -11389,7 +11389,35 @@ textarea.form-control-lg {
   width: 100%;
 }
 
-@media screen and (max-width: 751px) {
+@media screen and (orientation: landscape) {
+  header .nav {
+    font-size: 1rem;
+  }
+  header .nav .menu-nav__link {
+    display: inline-block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 200;
+  }
+
+  main .home h1 {
+    font-size: 3rem;
+  }
+  main .home .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 320px) {
+  main .home__name {
+    font-size: 3.5rem;
+  }
+  main .home .social-icons {
+    bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 601px) {
   main .home__name {
     padding-bottom: 0rem;
     margin-bottom: 0.5rem;
@@ -11403,20 +11431,25 @@ textarea.form-control-lg {
     font-size: 0.75rem;
   }
   main .about .contenedor {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
+    display: block;
   }
   main .about .contenedor .skills {
+    width: 60vw;
+    margin: 1rem auto 0 auto;
     transition: all 0.6s ease-in-out;
     transition-delay: 0;
+  }
+  main .about .contenedor .skills .title {
+    text-align: left;
+    padding: 5px;
+    margin: 0 0 0 0;
   }
   main .about .contenedor .skills .title:after {
     content: "+";
     color: #ff652f;
     font-weight: bold;
     float: right;
-    margin-left: 5px;
+    margin-left: 0px;
   }
   main .about .contenedor .skills .title.active:after {
     content: "➖";
@@ -11425,18 +11458,29 @@ textarea.form-control-lg {
     display: none;
   }
   main .about .contenedor .jobs {
+    width: 60vw;
+    margin: 1rem auto 0 auto;
     transition: all 0.6s ease-in-out;
     transition-delay: 0;
+  }
+  main .about .contenedor .jobs .title {
+    text-align: left;
+    margin: 0 0 0 0;
+    padding: 5px;
   }
   main .about .contenedor .jobs .title:after {
     content: "+";
     color: #ff652f;
     font-weight: bold;
     float: right;
-    margin-left: 5px;
+    margin-left: 0px;
   }
   main .about .contenedor .jobs .title.active:after {
     content: "➖";
+  }
+  main .about .contenedor .jobs .active {
+    background-color: #8d8d8d;
+    margin: 0 2.2rem 0 0;
   }
   main .about .contenedor .jobs__panel {
     display: none;

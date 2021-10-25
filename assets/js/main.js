@@ -63,3 +63,60 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// Despliegue de Skills en media-sm:
+
+const skillsTitle = document.querySelector("#skills__title");
+const skillsPanel = document.querySelector(".skills__panel");
+let showSkill = false;
+
+if (skillsTitle){
+  skillsTitle.addEventListener('click',toggleSkils);
+} // Es necesario pues el evento esta solo en about.html
+
+function toggleSkils( ){
+  if (!showSkill){
+    // debugger;
+    skillsTitle.classList.toggle("active");
+    skillsPanel.style.display = 'block';
+    showSkill = true;
+
+  } else {
+
+    // debugger;
+    skillsTitle.classList.remove("active");
+    skillsPanel.style.display="none";
+    showSkill = false;
+  }
+}
+
+// Despliegue de los trabajos
+const jobsTitle = document.querySelector('#jobs__title');
+const jobsPanel = document.querySelector(".jobs__panel");
+let showJobs = false;
+
+if (jobsTitle){
+  jobsTitle.addEventListener('click',toggleJobs);
+}// Es necesario pues el evento esta solo en about.html
+
+function toggleJobs(){
+  if (!showJobs){
+    // debugger;
+    jobsTitle.classList.toggle("active");
+    jobsPanel.style.display = 'block';
+    showJobs = true;
+
+  } else {
+
+    // debugger;
+    jobsTitle.classList.remove("active");
+    jobsPanel.style.display="none";
+    showJobs = false;
+  }
+}
+
+
+
+
+
+
