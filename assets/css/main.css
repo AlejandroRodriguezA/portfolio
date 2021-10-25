@@ -11241,7 +11241,7 @@ textarea.form-control-lg {
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/Alejandro-3.png") right top;
   background-size: cover;
 }
-.home .nodesigner {
+.home .no-designer {
   text-decoration: line-through;
 }
 .home__name {
@@ -11337,7 +11337,7 @@ textarea.form-control-lg {
   transform: translateY(-100%);
 }
 .nav .menu-nav__item {
-  transform: translate(12vw, -100vh);
+  transform: translate(128vw, -100vh);
 }
 .nav .menu-nav__item.active > a {
   color: #fff;
@@ -11389,6 +11389,59 @@ textarea.form-control-lg {
   width: 100%;
 }
 
+@media screen and (max-width: 751px) {
+  main .home__name {
+    padding-bottom: 0rem;
+    margin-bottom: 0.5rem;
+  }
+  main .home .social-icons {
+    position: fixed;
+    bottom: 5rem;
+    left: 1rem;
+  }
+  main .about__bio {
+    font-size: 0.75rem;
+  }
+  main .about .contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+  main .about .contenedor .skills {
+    transition: all 0.6s ease-in-out;
+    transition-delay: 0;
+  }
+  main .about .contenedor .skills .title:after {
+    content: "+";
+    color: #ff652f;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  main .about .contenedor .skills .title.active:after {
+    content: "➖";
+  }
+  main .about .contenedor .skills__panel {
+    display: none;
+  }
+  main .about .contenedor .jobs {
+    transition: all 0.6s ease-in-out;
+    transition-delay: 0;
+  }
+  main .about .contenedor .jobs .title:after {
+    content: "+";
+    color: #ff652f;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  main .about .contenedor .jobs .title.active:after {
+    content: "➖";
+  }
+  main .about .contenedor .jobs__panel {
+    display: none;
+  }
+}
 @media screen and (min-width: 769px) {
   .menu-btn {
     visibility: hidden;
